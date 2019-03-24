@@ -1,0 +1,17 @@
+.hidden {
+  display: none;
+}
+#page-right  {
+  float:right;
+  margin: 0;
+  display: inline
+}
+td a{
+  padding: 10px
+}
+footer p {
+  margin: 32px auto;
+}
+*{
+	list-style: none;
+}

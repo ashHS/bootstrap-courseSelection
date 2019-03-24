@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>选课中心</title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="header">
+			<nav class="navbar navbar-default" role="navigation" id="bg">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <a href="shouye.html" class="navbar-brand">学生选课评教系统</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    <ul class="nav navbar-nav">
+						    <li class="active"><a href="#">选课管理</a></li>
+							<li><a href="pingjia.html">教学评价</a></li>
+					    </ul>
+						<ul class="nav navbar-nav navbar-right">
+							<form action="" class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<button class="btn btn-default btn-info">搜索</button>
+							</form>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin_one<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">我删除的条目</a></li>
+									<li><a href="#">我修改的条目</a></li>
+									<li><a href="#">我恢复的条目</a></li>
+									<li class="divider"></li>
+									<li><a href="#">注销</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">换肤<b class="caret"></b></a>
+								<ul class="dropdown-menu" id="color">
+									<li id="blue"><a href="#">蓝色</a></li>
+									<li id="red"><a href="#">红色</a></li>
+									<li id="yellow"><a href="#">黄色</a></li>
+									<li id="green"><a href="#">绿色</a></li>
+									<li id="default" class="active"><a href="#">默认</a></li>
+								</ul>
+							</li>
+						</ul>
+				    </div>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- 左侧 -->
+				<div class="co-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">选课中心</a>
+						<a href="taolun.html" class="list-group-item">学习论坛</a>
+						<a href="xinxi.html" class="list-group-item">信息公告</a>
+						<a href="yixuanke.html" class="list-group-item" id="selected">已选课程</a>
+					</div>
+				</div>
+				<!-- 右侧 -->
+				<div class="co-xs-12 col-sm-10 col-md-10 col-lg-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>选课中心</h4>
+							<div class="form-group">
+								<span>全选 <input type="checkbox" id="all"/></span>
+								<button class="btn btn-success">确定</button>
+								<button class="btn btn-danger">删除</button>
+								<!--<button class="btn btn-danger" id="del">删除</button>-->
+								<ul class="pagination visible-md visible-lg visible-sm" id="page-right">
+									<li><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="panel-body">
+							<table class="table">
+								<tr>
+									<th></th>
+									<th>选课状态</th>
+									<th>课程名称</th>
+									<th>上课老师</th>
+									<th>选课时间</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-default">未选课</span></td>
+									<td>乒乓球</td>
+									<td>King</td>
+									<td>2017年1月8日 08:08</td>
+									<td>
+										<a href="#collapse1" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse1" class="collapse">
+									<td colspan="10">     乒乓球   体育课   1学分</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-success">已选课</span></td>
+									<td>软件测试</td>
+									<td>Tina</td>
+									<td>2017年1月18日 10:38</td>
+									<td>
+										<a href="#collapse2" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse2" class="collapse">
+									<td colspan="10">     软件测试   专业选修课   2学分</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-danger">已删除</span></td>
+									<td>数据库理论</td>
+									<td>Sandy</td>
+									<td>2017年1月18日 15:50</td>
+									<td>
+										<a href="#collapse3" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse3" class="collapse">
+									<td colspan="10">     数据库理论   专业选修课   1.5学分</td>
+								</tr>
+                                <tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-default">未选课</span></td>
+									<td>计算机网络</td>
+									<td>Super</td>
+									<td>2017年1月18日 11:11</td>
+									<td>
+										<a href="#collapse4" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse4" class="collapse">
+									<td colspan="10">     计算机网络   专业选修课   2学分</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-success">已选课</span></td>
+									<td>Linux</td>
+									<td>Queen</td>
+									<td>2017年1月20日 10:12</td>
+									<td>
+										<a href="#collapse5" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse5" class="collapse">
+									<td colspan="10">     Linux   选修课   1学分</td>
+                                </tr>
+                                <tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-default">未选课</span></td>
+									<td>数据结构</td>
+									<td>Bob</td>
+									<td>2017年1月8日 08:08</td>
+									<td>
+										<a href="#collapse7" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse7" class="collapse">
+									<td colspan="10">     数据结构   必修课   2学分</td>
+                                </tr>
+                                <tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-default">未选课</span></td>
+									<td>算法设计</td>
+									<td>Tina</td>
+									<td>2017年1月8日 08:08</td>
+									<td>
+										<a href="#collapse8" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse8" class="collapse">
+									<td colspan="10">     算法设计   专业基础选修课   2学分</td>
+                                </tr>
+                                <tr>
+									<td><input type="checkbox" id="single" /></td>
+									<td><span class="label label-default">未选课</span></td>
+									<td>篮球</td>
+									<td>Sun</td>
+									<td>2017年1月8日 08:08</td>
+									<td>
+										<a href="#collapse9" class="detail-link" data-toggle="collapse" data-parent="#accordion">
+											<span class="glyphicon glyphicon-chevron-down"></span>
+										</a>
+									</td>
+								</tr>
+								<tr id="collapse9" class="collapse">
+									<td colspan="10">     篮球   体育课   1学分</td>
+								</tr>
+							</table>
+							<!--小屏后在下面显示翻页-->
+							<div class="visible-xs">
+								<ul class="pagination">
+									<li><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p style="text-align:center">&copy; Copyright &copy; 2016.Bootstrap All rights reserved.</p>
+		</footer>
+		<script>
+		    $(function(){
+				/*全选*/
+				$('#all').click(function(){
+					if($(this).is(":checked")){
+						$('td').find('input').prop("checked",true);
+					}else{
+						$('td').find('input').prop("checked",false);
+					}
+				});
+				/*换肤*/
+                $('#blue').click(function(){
+					$('body').css("background","url(img/bg4.jpg)");
+					$('#bg').css("background","url(img/bg4.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#blue').addClass("active");
+				});
+				$('#green').click(function(){
+					$('body').css("background","url(img/bg1.jpg)");
+					$('#bg').css("background","url(img/bg1.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#green').addClass("active");
+				});
+				$('#red').click(function(){
+					$('body').css("background","url(img/bg2.jpg)");
+					$('#bg').css("background","url(img/bg2.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#red').addClass("active");
+				});
+				$('#yellow').click(function(){
+					$('body').css("background","url(img/bg3.jpg)");
+					$('#bg').css("background","url(img/bg3.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#yellow').addClass("active");
+				});
+				$('#default').click(function(){
+					$('body').css("background","white");
+					$('#bg').css("background","");
+					$('#color li').siblings().removeClass('active');
+					$('#default').addClass("active");
+				});
+			})
+		</script>
+	</body>
+</html>

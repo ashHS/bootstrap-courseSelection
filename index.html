@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" href="css/index2.css" />
+	</head>
+	<body>
+		<h1>学生选课评教系统</h1>
+		<div class="bvg">
+			<h2>登录</h2>
+			<form action="javascript:void(0)" id="my_form">
+					<div class="left">
+						<label>学号：</label>
+					</div>
+					<div class="right">
+						<input type="text" for="my_form" id="account" required="required">
+					</div>
+					<div class="left">
+						<label>密码：</label>
+					</div>
+					<div class="right">
+						<input type="password" for="my_form" id="password" required="required">
+					</div>
+					<button type="submit" id="index"for="my_form" name="index">登录</button>
+					<button  id="login" for="my_form" name="login">注册</button>
+			</form>
+		</div>
+		<script src="js/index.js"></script>
+		<script>
+			window.onload=function(){
+				document.getElementById('login').onclick=function(e){
+					e.preventDefault();
+					window.location.href="login.html";
+				}
+				document.getElementById('index').onclick=function(e){
+					e.preventDefault();
+					window.location.href="shouye.html";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>教学评价</title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="header">
+			<nav class="navbar navbar-default" role="navigation" id="bg">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <a href="shouye.html" class="navbar-brand">学生选课评教系统</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    <ul class="nav navbar-nav">
+						    <li><a href="xuanke.html">选课管理</a></li>
+							<li class="active"><a href="pingjia.html">教学评价</a></li>
+					    </ul>
+						<ul class="nav navbar-nav navbar-right">
+							<form action="" class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<button class="btn btn-default btn-info">搜索</button>
+							</form>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin_one<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">我删除的条目</a></li>
+									<li><a href="#">我修改的条目</a></li>
+									<li><a href="#">我恢复的条目</a></li>
+									<li class="divider"></li>
+									<li><a href="#">注销</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">换肤<b class="caret"></b></a>
+								<ul class="dropdown-menu" id="color">
+									<li id="blue"><a href="#">蓝色</a></li>
+									<li id="red"><a href="#">红色</a></li>
+									<li id="yellow"><a href="#">黄色</a></li>
+									<li id="green"><a href="#">绿色</a></li>
+									<li id="default" class="active"><a href="#">默认</a></li>
+								</ul>
+							</li>
+						</ul>
+				    </div>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- 左侧 -->
+				
+				<!-- 右侧 -->
+				<div class="co-xs-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+                            <h4>评价信息</h4>
+                            <div class="form-group">
+                                <div> </div>
+                                <ul class="pagination visible-md visible-lg visible-sm" id="page-right">
+									<li><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+                            </div>
+						</div>
+						<div class="panel-body">
+							<table class="table">
+								<tr>
+									<th>序号</th>
+									<th>课程编号</th>
+									<th>课程名称</th>
+									<th>上课老师</th>
+									<th>评分</th>
+									<th>已评</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2012101601</td>
+									<td><a href="ping.html" target="_blank">乒乓球</a></td>
+									<td>Tina</td>
+									<td>91</td>
+									<td>是</td>
+								</tr>
+								<tr>
+                                    <td>2</td>
+                                    <td>1811000500</td>
+                                    <td><a href="#">计算机网络</a></td>
+                                    <td>Super</td>
+                                    <td>90</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>0631002701</td>
+                                    <td><a href="#">人机交互</a></td>
+                                    <td>King</td>
+                                    <td>95</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>0631003801</td>
+                                    <td><a href="#">数据库理论</a></td>
+                                    <td>Sandy</td>
+                                    <td>90</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>0631003901</td>
+                                    <td><a href="#">Linux</a></td>
+                                    <td>Queen</td>
+                                    <td>93</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>0625486419</td>
+                                    <td><a href="#">算法设计</a></td>
+                                    <td>Tina</td>
+                                    <td>89</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>0621003403</td>
+                                    <td><a href="#">Node.js</a></td>
+                                    <td>Sams</td>
+                                    <td>88</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>0631004801</td>
+                                    <td><a href="#">Bootstrap</a></td>
+                                    <td>Sun</td>
+                                    <td>92</td>
+                                    <td>是</td>
+                                </tr>
+							</table>
+							<!--小屏后在下面显示翻页-->
+							<div class="visible-xs">
+								<ul class="pagination">
+									<li><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p style="text-align:center">&copy; Copyright &copy; 2016.Bootstrap All rights reserved.</p>
+		</footer>
+		<script>
+		    $(function(){
+				/*全选*/
+				$('#all').click(function(){
+					if($(this).is(":checked")){
+						console.log("ss");
+						$('td').find('input').prop("checked",true);
+					}else{
+						$('td').find('input').prop("checked",false);
+					}
+				});
+				/*换肤*/
+                $('#blue').click(function(){
+					$('body').css("background","url(img/bg4.jpg)");
+					$('#bg').css("background","url(img/bg4.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#blue').addClass("active");
+				});
+				$('#green').click(function(){
+					$('body').css("background","url(img/bg1.jpg)");
+					$('#bg').css("background","url(img/bg1.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#green').addClass("active");
+				});
+				$('#red').click(function(){
+					$('body').css("background","url(img/bg2.jpg)");
+					$('#bg').css("background","url(img/bg2.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#red').addClass("active");
+				});
+				$('#yellow').click(function(){
+					$('body').css("background","url(img/bg3.jpg)");
+					$('#bg').css("background","url(img/bg3.jpg)");
+					$('#color li').siblings().removeClass('active');
+					$('#yellow').addClass("active");
+				});
+				$('#default').click(function(){
+					$('body').css("background","white");
+					$('#bg').css("background","");
+					$('#color li').siblings().removeClass('active');
+					$('#default').addClass("active");
+				});
+				/*删除*/
+			})
+		</script>
+	</body>
+</html>

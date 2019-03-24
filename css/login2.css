@@ -1,0 +1,96 @@
+body,input,textarea,select,option{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+body{
+	background: url(../img/indexbg.jpg);
+}
+.bg{
+
+	width: 700px;
+	margin: 0 auto;
+}
+.left{
+	width: 170px;
+	height: 30px;
+	float: left;
+	text-align: right;
+	line-height: 30px;
+	margin: 10px 0;
+	padding-right: 30px;
+	color: #fff;
+}
+.right{
+	width: 470px;
+	height: 30px;
+	float: left;
+	margin: 10px 0;
+	line-height: 30px;
+}
+.right .notice1{
+	width: 150px;
+	height: 30px;
+	float: right;
+	font-size: 11px;
+	line-height: 13px;
+	
+	color: red;
+	display: none;
+}
+.right .notice2{
+	width: 150px;
+	height: 30px;
+	float: right;
+	font-size: 11px;
+	line-height: 13px;
+	
+	color: red;
+	display: none;
+}
+legend{
+	color: #333;
+	font-size: 14px;
+}
+fieldset{
+	border: 1px solid #555;
+	margin-bottom: 20px;
+}
+label{
+	color: #fff;
+}
+input{
+	width: 280px;
+	height: 30px;
+	border: 1px solid #888;
+	border-radius: 15px;
+	box-shadow: 0 2px 1px #aaa inset;
+	padding-left: 20px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+/* 设置表单控件获得焦点通过验证时的样式 */
+input:focus:valid{
+	outline: 1px solid blue;
+}
+/* 设置表单控件获得焦点未通过验证 */
+input:focus:invalid{
+	outline: 1px solid red;
+}
+/* 设置单选控件样式 */
+input[name=my_sex]{
+	width: 30px;
+	height: 15px;
+	line-height: 30px;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none!important;
+}
+button{
+	width: 100px;
+	padding: 0;
+	margin: 10px 300px;
+	background: #F8FDFF;
+	cursor: pointer;
+}

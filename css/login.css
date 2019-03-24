@@ -1,0 +1,26 @@
+        #login{
+			width: 80px;
+			font-weight: 400;
+			font-size: 18px;
+			background: #C6C8CA;
+		}
+		#login:hover{
+			background: #20C997;
+		}
+		#myModal{
+			text-align: center;
+		}
+		#myModal input{
+			width: 50%;
+			margin-bottom: 30px;
+			height: 40px;
+			border-radius: 5px;
+		}
+		#input2{
+			margin-left: -12px;
+		}
+		input::-moz-placeholder{
+			font-weight: 500;
+			font-size: 20px;
+			text-align: center;
+		}
