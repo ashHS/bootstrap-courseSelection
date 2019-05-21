@@ -12,3 +12,5 @@
 5.学校公告界面
 
 ### 换肤功能
+页面预览：
+![image](https://github.com/ashHS/bootstrap-courseSelection/blob/master/1558430969766.gif)
